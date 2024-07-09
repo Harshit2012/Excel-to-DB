@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.jpg" height="200" width="200">
+</p>
+
 # Excel to DB
 Upload your Excel file and get the code to import the excel data into Firebase DB.
 
