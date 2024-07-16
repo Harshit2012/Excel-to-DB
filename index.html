@@ -27,12 +27,19 @@
                 </li>
             </ul>
         </div>
+        <div class="ml-auto">
+            <label for="modeSwitch" class="text-drak">Mode:</label><span class="badge bg-success">New</span>
+            <select onchange="switchMode(this.value)" class="form-control">
+                <option value="light">Light</option>
+                <option value="terminal">Terminal</option>
+            </select>
+        </div>
     </nav>
     <div class="container mt-5">
         <div id="intro" class="text-center shadow">
             <h1>Welcome to the Excel to DB</h1>
             <p>Upload your Excel file and get the code to import the excel data into Firebase DB</p>
-            <button class="btn btn-primary" onclick="document.getElementById('fileInput').click();">Get Started</button>
+            <button class="btn btn-outline-success" onclick="document.getElementById('fileInput').click();">Get Started</button>
             <input class="mb-5" type="file" id="fileInput" accept=".xlsx, .xls" style="display:none;" onchange="handleFileUpload(event)">
         </div>
         <div id="features" class="row mt-5">
