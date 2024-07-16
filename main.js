@@ -85,3 +85,13 @@ function copyToClipboard(elementId) {
         alert('Failed to copy: ', err);
     });
 }
+
+function switchMode(mode) {
+    const body = document.body;
+    body.classList.remove('light-mode', 'terminal-mode');
+    if (mode === 'light') {
+        body.classList.add('light-mode');
+    } else if (mode === 'terminal') {
+        body.classList.add('terminal-mode');
+    }
+}
