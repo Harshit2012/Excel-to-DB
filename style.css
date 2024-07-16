@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f8f9fa;
 }
@@ -21,4 +25,43 @@ body {
     border: 1px solid #dee2e6;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+
+.light-mode .border {
+    border-color: #ccc;
+}
+
+.terminal-mode {
+    background-color: black;
+    color: green;
+}
+
+.terminal-mode .navbar {
+    background-color: #222;
+}
+
+.terminal-mode .border {
+    border-color: #444;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(#642bff, #ff22e6);
+	border-radius: 20px;
 }
